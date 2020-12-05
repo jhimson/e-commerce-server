@@ -14,7 +14,7 @@ Router.route('/')
 .get(getProducts)
 .post(protect, isAdmin, addNewProduct)
 
-Router.route('/top').get(protect, fetchTopProducts)
+Router.route('/top').get(fetchTopProducts)
 
 Router.route('/:id')
 .get(getProductById)
